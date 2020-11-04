@@ -6,6 +6,6 @@ import { ExampleButton } from '../components/button'
 export default () => (
     <Layout>
       <h1>Hello Gatsby</h1>
-      <ExampleButton>Click me</ExampleButton>
+      <ExampleButton primary>Click me</ExampleButton>
     </Layout>
 )

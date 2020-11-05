@@ -30,7 +30,7 @@ const Images = () => {
         <section className = "images">
             <article className ="single-image">
                 <h3>basic image</h3>
-                <img src = {Img} width="50%"></img>
+                <img src = {Img} width="50%" alt = "girl"></img>
                 <h2>content</h2>
             </article>
 

@@ -1,10 +1,9 @@
 import React from 'react'
 
-export const latest = () => {
+const latest = () => {
     return (
         <div>
-        <h1>Hello from latest product</h1>
-        <p>and the url is /products/latest</p>
+        <h1>hello from latest</h1>
             
         </div>
     )

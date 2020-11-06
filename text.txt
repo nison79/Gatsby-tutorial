@@ -1,0 +1,39 @@
+import React from "react"
+import { graphql } from "gatsby"
+import Image from 'gatsby-image'
+
+
+const ComponentName = ({ data:{product:{price,title:{title},image:{fixed},info:{info}}} }) => {
+    return  (
+            <div>
+                <h2>{title}</h2>
+                <Image fixed={fixed} alt ={title}></Image>
+                <article>
+                    <p>{info}</p>
+                    <h2>{price}</h2>
+                </article>
+            </div>
+           
+    )
+}
+
+export const query = graphql`
+  {
+    product: contentfulProduct(slug: {eq: "goya-1"}) {
+      title {
+        title
+      }
+      price
+      image {
+        fixed {
+            ...GatsbyContentfulFixed
+        }
+      }
+      info {
+        info
+      }
+    }
+  }
+`
+
+export default ComponentName
